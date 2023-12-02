@@ -1,0 +1,87 @@
+body {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+}
+
+.codesandbox {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+}
+.fileSystemContainer {
+  background-color: rgb(21, 21, 21);
+  min-width: 10%;
+  width: 20%;
+  max-width: 40%;
+  resize: horizontal;
+  direction: ltr;
+  overflow: auto;
+  border: 1px solid white;
+}
+
+.fileSystemContainer > div:first-child {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  height: 30px;
+}
+.code {
+  background-color: pink;
+  width: 40%;
+}
+.browser {
+  background-color: white;
+  min-width: 40%;
+  max-width: 60%;
+  width: 40%;
+  height: 100%;
+  resize: horizontal;
+  direction: rtl;
+  overflow: auto;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.htmlLogo,
+.cssLogo,
+.scriptLogo,
+.folderLogo {
+  width: 18px;
+}
+.folderContainer {
+  display: flex;
+  gap: 5px;
+  margin-left: 10px;
+}
+.files {
+  margin-top: 10px;
+  margin-left: 30px;
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.files > div {
+  cursor: pointer;
+  color: rgb(247, 241, 241, 0.85);
+  padding: 5px;
+}
+.files > div:first-child {
+
+}
+.files > div:hover {
+  color: white;
+}
+.active {
+  background-color: grey;
+}
